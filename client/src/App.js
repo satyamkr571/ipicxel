@@ -1,10 +1,15 @@
-import React from "react";
-
+import React, { Fragment } from "react";
 import "./App.css";
+import Navbar from "./components/layout/Navbar";
+import LandingPage from "./components/layout/landingpage";
+import ImagePage from "./components/layout/imagepage";
 
-function App() {
-  console.log(<span />);
-  return <div />;
-}
+const App = () => (
+  <Fragment>
+    <Navbar />
+    <LandingPage />
+    <ImagePage />
+  </Fragment>
+);
 
 export default App;

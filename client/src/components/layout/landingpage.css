@@ -1,0 +1,44 @@
+.landing {
+  background-image: url("../../image/bgimg2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.main-contanier {
+  text-align: center;
+  padding-top: 50px;
+  position: auto;
+}
+.text-container {
+  text-align: center;
+  font-size: 4vw;
+  font-weight: bolder;
+  color: black;
+  position: relative;
+}
+.search-container {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2vw;
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+.formdesigne {
+  font-size: 2vw;
+  color: black;
+  background-color: white;
+  border: 0px;
+}
+.buttondesgine {
+  font-size: 2vw;
+  color: grey;
+  background-color: white;
+  text-align: center;
+  border: 0px;
+}
+.material-icons {
+  font-size: 2vw;
+  font-weight: bolder;
+}
