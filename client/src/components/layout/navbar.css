@@ -1,0 +1,18 @@
+.navcolor {
+  /* background: linear-gradient(
+    120deg,
+    rgb(14, 179, 179),
+    rgb(14, 179, 179),
+    rgb(138, 87, 219),
+    rgb(231, 11, 231),
+    rgba(236, 13, 87, 0.904),
+    rgb(121, 4, 4)
+  ); */
+  background-image: url("../../image/bgimg2.jpg");
+  background-size: cover;
+  font-size: x-large;
+}
+.navheadfont {
+  font-size: x-large;
+  font-weight: bold;
+}

@@ -1,0 +1,101 @@
+.footer {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+}
+.store {
+  background-color: black;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.ul_linkclass {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0px;
+}
+.li_linkclass {
+  color: white;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.li_linkclass:hover {
+  text-shadow: rgb(8, 250, 250);
+  color: rgba(71, 7, 248, 0.61);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.social_contact {
+  position: relative;
+  float: right;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 2vw;
+  font-weight: bolder;
+  width: 7%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30%;
+}
+
+.fa:hover {
+  opacity: 0.8;
+}
+
+.fa-facebook {
+  background: royalblue;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: orangered;
+  color: white;
+}
+
+.fa-youtube {
+  background: red;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(
+    120deg,
+    blue,
+    blueviolet,
+    purple,
+    coral,
+    red,
+    orangered
+  );
+  color: blue;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.copyright {
+  color: whitesmoke;
+  text-align: end;
+}
+.address {
+  overflow: hidden;
+  font-size: 1vw;
+}
+
+.mapstyle {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+}

@@ -2,11 +2,12 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import camera from "../../image/camera.png";
+import "./navbar.css";
 
 export default function Navbars() {
   return (
-    <Navbar bg="transparent" expand="xl" variant="light" sticky="top">
-      <Navbar.Brand href="#home">
+    <Navbar expand="xl" variant="dark" sticky="top" className="navcolor">
+      <Navbar.Brand href="#home" className="navheadfont">
         <img
           src={camera}
           width="30"

@@ -2,8 +2,9 @@
   background-image: url("../../image/bgimg2.jpg");
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 550px;
   position: relative;
+  overflow: hidden;
 }
 .main-contanier {
   text-align: center;
@@ -40,5 +41,9 @@
 }
 .material-icons {
   font-size: 2vw;
+  font-weight: bolder;
+}
+.selectedText {
+  font-size: 1vw;
   font-weight: bolder;
 }

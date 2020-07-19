@@ -1,6 +1,13 @@
 import React from "react";
 import "./landingpage.css";
-import { InputGroup, Row, Col, FormControl, Dropdown } from "react-bootstrap";
+import {
+  InputGroup,
+  Row,
+  Col,
+  FormControl,
+  Dropdown,
+  DropdownButton,
+} from "react-bootstrap";
 
 const Landing = () => {
   return (
@@ -13,55 +20,40 @@ const Landing = () => {
           </p>
         </div>
         <div className="search-container">
-          {/* <Form>
-            <Row>
-              <Col xs={1}></Col>
-              <Col xs={10}>
-                <Form.Control placeholder="Search" className="formdesigne" />
-              </Col>
-              <Col xs={1}>
-                <Button
-                  type="submit"
-                  className="buttondesgine"
-                  style={{
-                    width: "90%",
-                    backgroundImage:
-                      "linear-gradient(to bottom left, pink,cyan)",
-                  }}
-                >
-                  Search
-                </Button>
-              </Col>
-            </Row>
-          </Form> */}
           <Row>
             <Col xs={1}></Col>
             <Col xs={10}>
               <InputGroup className="formdesigne">
-                <Dropdown
-                  as={InputGroup.Prepend}
-                  variant="outline-secondary"
-                  title="Dropdown"
-                  id="input-group-dropdown-1"
-                  className="buttondesgine"
-                >
-                  {/* <Dropdown.Item className="buttondesgine" href="#">
+                <DropdownButton title="All Cateogery" variant="light">
+                  <Dropdown.Item href="#/action-2">
                     <i className="material-icons">camera_alt</i>
-                  </Dropdown.Item> */}
-                  <Dropdown.Item className="buttondesgine" href="#">
-                    <i className="material-icons">video_library</i>
+                    <p className="selectedText">Images</p>
                   </Dropdown.Item>
-                  <Dropdown.Item className="buttondesgine" href="#">
-                    <i className="material-icons">image</i>
-                  </Dropdown.Item>
-                  <Dropdown.Item className="buttondesgine" href="#">
+                  <Dropdown.Item href="#/action-3">
                     <i className="material-icons">music_video</i>
+                    <p className="selectedText">Music</p>
                   </Dropdown.Item>
-                </Dropdown>
-                <FormControl className="formdesigne" />
+                  <Dropdown.Item href="#/action-3">
+                    <i className="material-icons">video_library</i>
+                    <p className="selectedText">Video</p>
+                  </Dropdown.Item>
+                </DropdownButton>
+
+                <FormControl
+                  placeholder="Sreach..."
+                  aria-label="Search"
+                  style={{
+                    height: "100%",
+                    marginTop: "0px",
+                    fontSize: "2vw",
+                    border: "0px",
+                  }}
+                />
                 <InputGroup.Append>
                   <button variant="outline-secondary" className="buttondesgine">
-                    <i className="material-icons">search</i>
+                    <i className="material-icons" style={{ top: "0px" }}>
+                      search
+                    </i>
                   </button>
                 </InputGroup.Append>
               </InputGroup>

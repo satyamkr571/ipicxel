@@ -1,19 +1,18 @@
 import React from "react";
-// @ts-ignore
-import Gallery from "react-grid-gallery";
+import ImageGallery from "react-image-gallery";
 
 import bgimg1 from "../../image/bgimg1.jpg";
 import bgimg3 from "../../image/bgimg3.png";
 import bgimg4 from "../../image/bgimg4.jpg";
 import bgimg5 from "../../image/bgimg5.jpg";
 
-const PHOTOS = [
+const photos = [
   {
     src: { bgimg1 },
     thumbnail: { bgimg1 },
-    thumbnailWidth: 320,
-    thumbnailHeight: 212,
-    isSelected: true,
+    thumbnailWidth: 100,
+    thumbnailHeight: 30,
+
     tags: [
       { value: "Ocean", title: "Ocean" },
       { value: "People", title: "People" },
@@ -23,8 +22,8 @@ const PHOTOS = [
   {
     src: { bgimg4 },
     thumbnail: { bgimg4 },
-    thumbnailWidth: 320,
-    thumbnailHeight: 212,
+    thumbnailWidth: 300,
+    thumbnailHeight: 40,
     tags: [
       { value: "Ocean", title: "Ocean" },
       { value: "People", title: "People" },
@@ -34,8 +33,8 @@ const PHOTOS = [
   {
     src: { bgimg3 },
     thumbnail: { bgimg3 },
-    thumbnailWidth: 320,
-    thumbnailHeight: 212,
+    thumbnailWidth: 120,
+    thumbnailHeight: 40,
     tags: [
       { value: "Ocean", title: "Ocean" },
       { value: "People", title: "People" },
@@ -45,8 +44,9 @@ const PHOTOS = [
   {
     src: { bgimg5 },
     thumbnail: { bgimg5 },
-    thumbnailWidth: 320,
-    thumbnailHeight: 212,
+    thumbnailHeight: 42,
+    thumbnailWidth: 120,
+
     tags: [
       { value: "Ocean", title: "Ocean" },
       { value: "People", title: "People" },
@@ -55,9 +55,5 @@ const PHOTOS = [
   },
 ];
 export default function Imagepage() {
-  return (
-    <div style={{ height: "700px", paddingTop: "50px" }}>
-      <Gallery images={PHOTOS} />
-    </div>
-  );
+  return <ImageGallery items={photos} />;
 }
