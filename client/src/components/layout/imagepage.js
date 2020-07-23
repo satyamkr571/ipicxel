@@ -1,59 +1,309 @@
 import React from "react";
-import ImageGallery from "react-image-gallery";
+import Gallery from "react-grid-gallery";
 
-import bgimg1 from "../../image/bgimg1.jpg";
-import bgimg3 from "../../image/bgimg3.png";
-import bgimg4 from "../../image/bgimg4.jpg";
-import bgimg5 from "../../image/bgimg5.jpg";
-
-const photos = [
+const IMAGES = [
   {
-    src: { bgimg1 },
-    thumbnail: { bgimg1 },
-    thumbnailWidth: 100,
-    thumbnailHeight: 30,
-
+    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 144,
     tags: [
       { value: "Ocean", title: "Ocean" },
       { value: "People", title: "People" },
     ],
-    caption: "Image 1",
+    caption: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: { bgimg4 },
-    thumbnail: { bgimg4 },
-    thumbnailWidth: 300,
-    thumbnailHeight: 40,
+    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+    thumbnailWidth: 520,
+    thumbnailHeight: 212,
     tags: [
       { value: "Ocean", title: "Ocean" },
       { value: "People", title: "People" },
     ],
-    caption: "Image 2",
+    caption: "Boats (Jeshu John - designerspics.com)",
   },
-  {
-    src: { bgimg3 },
-    thumbnail: { bgimg3 },
-    thumbnailWidth: 120,
-    thumbnailHeight: 40,
-    tags: [
-      { value: "Ocean", title: "Ocean" },
-      { value: "People", title: "People" },
-    ],
-    caption: "Image 3",
-  },
-  {
-    src: { bgimg5 },
-    thumbnail: { bgimg5 },
-    thumbnailHeight: 42,
-    thumbnailWidth: 120,
 
+  {
+    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    thumbnail:
+      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
     tags: [
       { value: "Ocean", title: "Ocean" },
       { value: "People", title: "People" },
     ],
-    caption: "Image 4",
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 144,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+    thumbnailWidth: 520,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+
+  {
+    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    thumbnail:
+      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 144,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+    thumbnailWidth: 520,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+
+  {
+    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    thumbnail:
+      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 144,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+    thumbnailWidth: 520,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+
+  {
+    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    thumbnail:
+      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 144,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+    thumbnailWidth: 520,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+
+  {
+    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    thumbnail:
+      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 144,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+    thumbnailWidth: 520,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+
+  {
+    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    thumbnail:
+      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 144,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+    thumbnailWidth: 520,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+
+  {
+    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    thumbnail:
+      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 144,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    thumbnail:
+      "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+    thumbnailWidth: 520,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
+  },
+
+  {
+    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    thumbnail:
+      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [
+      { value: "Ocean", title: "Ocean" },
+      { value: "People", title: "People" },
+    ],
+    caption: "Boats (Jeshu John - designerspics.com)",
   },
 ];
-export default function Imagepage() {
-  return <ImageGallery items={photos} />;
+
+export default function imagepage() {
+  return (
+    <div>
+      <Gallery images={IMAGES} />
+    </div>
+  );
 }
