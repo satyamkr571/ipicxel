@@ -9,7 +9,7 @@ import {
   DropdownButton,
 } from "react-bootstrap";
 
-const Landing = () => {
+export default function Landingpage() {
   return (
     <div className="landing">
       <div className="main-contanier">
@@ -64,6 +64,4 @@ const Landing = () => {
       </div>
     </div>
   );
-};
-
-export default Landing;
+}

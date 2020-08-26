@@ -1,13 +1,13 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import camera from "../../image/camera.png";
+import camera from "./image/camera.png";
 import "./navbar.css";
 
 export default function Navbars() {
   return (
     <Navbar expand="xl" variant="dark" sticky="top" className="navcolor">
-      <Navbar.Brand href="#home" className="navheadfont">
+      <Navbar.Brand href="/" className="navheadfont">
         <img
           src={camera}
           width="30"
@@ -20,7 +20,7 @@ export default function Navbars() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="nav_a ">
-          <Nav.Link href="/home" className="active">
+          <Nav.Link href="/photographer" className="active">
             PhotoGrapher
           </Nav.Link>
           <Nav.Link href="/list" className="active">

@@ -5,7 +5,7 @@ import bgimg5 from "../../image/bgimg5.jpg";
 
 var photos = [
   {
-    src: "../../image/bgimg1.jpg",
+    src: { bgimg1 },
     title: "image title",
     description: "image description",
   },

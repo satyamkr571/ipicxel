@@ -1,8 +1,9 @@
 .footer {
-  background-color: black;
+  position: relative;
   margin: 0px;
   padding: 0px;
   height: auto;
+  background-color: black;
 }
 .store {
   background-color: black;

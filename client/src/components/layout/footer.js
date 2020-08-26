@@ -1,15 +1,15 @@
 import React from "react";
-import bgimg6 from "../../image/bgimg6.jpg";
+import bgimg6 from "./image/bgimg6.jpg";
 import { Card, Col, Row } from "react-bootstrap";
-import appstore from "../../image/appstoreb.png";
-import playstore from "../../image/playstoreb.png";
+import appstore from "./image/appstoreb.png";
+import playstore from "./image/playstoreb.png";
 import "./footer.css";
 
 export default function Footer() {
   return (
     <div className="footer">
       <Card className="text-white" style={{ width: "100%" }}>
-        <Card.Img
+        <img
           src={bgimg6}
           alt="Card image"
           style={{ height: "400px", width: "100%" }}

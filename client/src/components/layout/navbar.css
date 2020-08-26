@@ -8,9 +8,10 @@
     rgba(236, 13, 87, 0.904),
     rgb(121, 4, 4)
   ); */
-  background-image: url("../../image/bgimg2.jpg");
+  background-image: url("./image/bgimg2.jpg");
   background-size: cover;
   font-size: x-large;
+  opacity: 0.9;
 }
 .navheadfont {
   font-size: x-large;

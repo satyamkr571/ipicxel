@@ -300,7 +300,7 @@ const IMAGES = [
   },
 ];
 
-export default function imagepage() {
+export default function Imagepage() {
   return (
     <div>
       <Gallery images={IMAGES} />
