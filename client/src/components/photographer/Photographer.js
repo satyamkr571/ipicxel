@@ -1,5 +1,6 @@
 import React from "react";
 import "./photographer.css";
+import { Link } from "react-router-dom";
 export default function Photographer() {
   return (
     <section class="photogrpher_landing">
@@ -11,12 +12,12 @@ export default function Photographer() {
             from other photographers
           </p>
           <div class="buttons">
-            <a href="register.html" class="btn btn-primary">
+            <Link to="/register" class="btn btn-primary">
               Sign Up
-            </a>
-            <a href="login.html" class="btn btn-light">
+            </Link>
+            <Link to="/login" class="btn btn-light">
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </div>

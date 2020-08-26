@@ -26,10 +26,10 @@ export default function Navbars() {
           <Nav.Link href="/list" className="active">
             Posts
           </Nav.Link>
-          <Nav.Link href="/create" className="active">
+          <Nav.Link href="/login" className="active">
             Login
           </Nav.Link>
-          <Nav.Link href="/" className="active">
+          <Nav.Link href="/register" className="active">
             SignUp
           </Nav.Link>
         </Nav>
