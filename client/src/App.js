@@ -14,12 +14,12 @@ const App = () => (
       <Navbar />
       <Route exact path="/" component={Home}></Route>
       <Route exact path="/photographer" component={Photographer}></Route>
-      <section className="container">
+      <div className="container-fluid" style={{ padding: "0px" }}>
         <Switch>
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
         </Switch>
-      </section>
+      </div>
       <Footer />
     </Fragment>
   </Router>

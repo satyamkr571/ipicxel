@@ -1,21 +1,24 @@
 .footer {
   position: relative;
-  margin: 0px;
+
   padding: 0px;
   height: auto;
-  background-color: black;
+  width: 100%;
+  background-image: url("./image/bgimg6.jpg");
+  background-size: cover;
 }
 .store {
   background-color: black;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .ul_linkclass {
   color: white;
   text-decoration: none;
   list-style-type: none;
-  padding: 0px;
+  padding: 5px;
+  margin-left: 20px;
 }
 .li_linkclass {
   color: white;
@@ -32,44 +35,42 @@
 
 .social_contact {
   position: relative;
-  float: right;
+  padding-left: 25px;
+  color: white;
 }
-
-.fa {
-  padding: 15px;
-  font-size: 2vw;
+.socialbtn {
+  font-size: larger;
+  font-weight: bold;
+  width: 60px;
+}
+.socialbtn:hover {
+  width: 70px;
+  color: white;
+  font-size: x-large;
   font-weight: bolder;
-  width: 7%;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 30%;
 }
 
-.fa:hover {
-  opacity: 0.8;
-}
-
-.fa-facebook {
-  background: royalblue;
+.btn-fb {
+  background-color: blue;
   color: white;
 }
 
-.fa-twitter {
+.btn-tw {
   background: #55acee;
   color: white;
 }
 
-.fa-google {
+.btn-gplus {
   background: orangered;
   color: white;
 }
 
-.fa-youtube {
+.btn-yt {
   background: red;
   color: white;
 }
 
-.fa-instagram {
+.btn-ins {
   background: linear-gradient(
     120deg,
     blue,
@@ -79,7 +80,7 @@
     red,
     orangered
   );
-  color: blue;
+  color: white;
 }
 
 .fa-skype {
@@ -92,11 +93,12 @@
 }
 .address {
   overflow: hidden;
-  font-size: 1vw;
+  font-size: large;
+  color: bisque;
 }
 
 .mapstyle {
-  height: 70%;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }

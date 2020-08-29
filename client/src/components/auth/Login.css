@@ -1,0 +1,41 @@
+.login {
+  background-image: url("../photographer/image/photographerBgImg.jpg");
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: soft-light;
+  padding: 0px;
+}
+
+.loginform {
+  padding: 5% 10% 0% 10%;
+  opacity: 0.8;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 2, 1.8);
+  transition: 0.8s;
+  width: 90%;
+  background: "transparent";
+  border-radius: 3%;
+  padding: 0px;
+
+  /* background: transparent; */
+}
+.text_center {
+  height: auto;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(37, 9, 59);
+}
+.forminput {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.para_auth {
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
