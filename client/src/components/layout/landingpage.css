@@ -1,11 +1,10 @@
 .landing {
-  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: rgba(0, 0, 0, 0.1);
   background-image: url("./image/bgimg2.jpg");
   background-size: cover;
   width: 100%;
   height: 550px;
   position: relative;
-  overflow: hidden;
 }
 .main-contanier {
   text-align: center;
@@ -16,7 +15,6 @@
   text-align: center;
   font-size: 4vw;
   font-weight: bolder;
-
   position: relative;
 }
 .search-container {
@@ -26,25 +24,35 @@
   color: black;
   position: relative;
   text-decoration: none;
+  margin: 10px 10px 10px 10px;
 }
-.formdesigne {
-  font-size: 2vw;
-  color: black;
-  background-color: white;
-  border: 0px;
+.searchbox {
+  margin: 20px 10% 0px 10%;
 }
-.buttondesgine {
-  font-size: 2vw;
-  color: grey;
-  background-color: white;
-  text-align: center;
-  border: 0px;
-}
-.material-icons {
-  font-size: 2vw;
+.searchboxselect {
+  border: 3px solid rgb(81, 225, 230);
   font-weight: bolder;
+  font-size: large;
+  padding: 0px;
 }
-.selectedText {
-  font-size: 1vw;
+.searchboxselecter {
+  border: 0px solid white;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.searchboxinput {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.searchboxforminput {
+  background-color: transparent;
+  font-weight: 500;
+  font-size: large;
+}
+.searchboxbutton {
   font-weight: bolder;
+  font-size: large;
+  width: 100%;
 }
