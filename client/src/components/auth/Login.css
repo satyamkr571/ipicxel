@@ -27,7 +27,9 @@
   font-size: xx-large;
   font-weight: bolder;
   text-align: center;
-  color: rgb(37, 9, 59);
+  background: -webkit-linear-gradient(rgb(39, 57, 219), rgb(67, 204, 223));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .forminput {
   font-size: x-large;

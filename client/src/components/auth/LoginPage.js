@@ -94,14 +94,23 @@ export default function LoginPage() {
                   <MDBBtn
                     type="button"
                     color="white"
-                    style={{ padding: "0px", width: "55px" }}
+                    style={{
+                      padding: "0px",
+                      width: "55px",
+                      fontWeight: "bolder",
+                    }}
                     rounded
                     className="mr-md-4 z-depth-5a para_auth"
                   >
                     <MDBIcon
                       fab
                       icon="fas fa-instagram"
-                      style={{ padding: "8px", width: "55px" }}
+                      style={{
+                        padding: "8px",
+                        width: "55px",
+                        color: "blue",
+                        fontWeight: "bolder",
+                      }}
                     />
                   </MDBBtn>
                 </div>
