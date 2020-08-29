@@ -60,10 +60,10 @@ export default function LoginPage() {
                     Sign in
                   </MDBBtn>
                 </div>
-                <p className=" para_auth text-right d-flex justify-content-center mb-0 pt-0">
+                <p className=" para_auth text-right d-flex justify-content-center mb-2 pt-0">
                   or Sign in with:
                 </p>
-                <div className="row my-0 d-flex justify-content-center">
+                <div className="row my-2 d-flex justify-content-center">
                   <MDBBtn
                     type="button"
                     color="white"

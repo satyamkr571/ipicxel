@@ -20,16 +20,16 @@ export default function Navbars() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="nav_a ">
-          <Nav.Link href="/photographer" className="active">
+          <Nav.Link href="/photographer" className="active nav_ab">
             PhotoGrapher
           </Nav.Link>
-          <Nav.Link href="/list" className="active">
+          <Nav.Link href="/list" className="active nav_ab">
             Posts
           </Nav.Link>
-          <Nav.Link href="/login" className="active">
+          <Nav.Link href="/login" className="active nav_ab">
             Login
           </Nav.Link>
-          <Nav.Link href="/register" className="active">
+          <Nav.Link href="/register" className="active nav_ab">
             SignUp
           </Nav.Link>
         </Nav>

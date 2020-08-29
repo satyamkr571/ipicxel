@@ -12,8 +12,15 @@
   background-size: cover;
   font-size: x-large;
   opacity: 0.9;
+  background-color: rgb(156, 151, 228);
+  font-size: large;
+  font-weight: bold;
 }
 .navheadfont {
   font-size: x-large;
+  font-weight: bold;
+}
+.nav_ab:hover {
+  font-size: larger;
   font-weight: bold;
 }
