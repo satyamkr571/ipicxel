@@ -1,15 +1,16 @@
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import appstore from "./image/appstoreb.png";
 import playstore from "./image/playstoreb.png";
+import { Row, Col } from "react-bootstrap";
 import "./footer.css";
 
 export default function Footer() {
   return (
     <div className="fluid-conatiner" style={{ padding: "0px", margin: "0px" }}>
       <div className="footer">
-        <Row>
-          <Col sm={9}>
+        <Row style={{ width: "99%", marginLeft: "1%" }}>
+          <Col xs={12} md={8}>
             <ul className="ul_linkclass">
               <li>
                 <a href="#" className="li_linkclass">
@@ -69,9 +70,13 @@ export default function Footer() {
               </div>
             </div>
           </Col>
-          <Col className="address" sm={3}>
+          <Col xs={6} md={4} className="address">
             <Card
-              style={{ marginTop: "10px", height: "200px", padding: "5px" }}
+              style={{
+                marginTop: "10px",
+                height: "250px",
+                padding: "5px",
+              }}
             >
               <iframe
                 className="mapstyle"

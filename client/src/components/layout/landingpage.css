@@ -6,53 +6,141 @@
   height: 550px;
   position: relative;
 }
-.main-contanier {
+.main_contanier {
   text-align: center;
   padding-top: 50px;
   position: auto;
 }
-.text-container {
+.text_container {
   text-align: center;
   font-size: 4vw;
   font-weight: bolder;
   position: relative;
 }
-.search-container {
-  text-align: center;
-  font-weight: bolder;
-  font-size: 2vw;
-  color: black;
-  position: relative;
+.search_container {
   text-decoration: none;
-  margin: 10px 10px 10px 10px;
-}
-.searchbox {
-  margin: 20px 10% 0px 10%;
-}
-.searchboxselect {
-  border: 3px solid rgb(81, 225, 230);
-  font-weight: bolder;
-  font-size: large;
+  margin: 1% 25% 0px 25%;
+  background-color: white;
   padding: 0px;
+  border-radius: 8px;
 }
-.searchboxselecter {
-  border: 0px solid white;
-  width: 100%;
-  height: 100%;
+.searchsection {
   background-color: transparent;
 }
-.searchboxinput {
+.search_input {
+  border: none;
   padding: 0px;
-  width: 100%;
-  height: 100%;
+  outline: 0px;
+  font-size: larger;
+  font-weight: 400;
+  color: black !important;
 }
-.searchboxforminput {
+.search_input:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.search_input:active {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.searchDropDown {
+  padding: 0px;
+  text-decoration: none;
+}
+.searchButton {
+  text-transform: none;
+  font-size: large;
   background-color: transparent;
-  font-weight: 500;
-  font-size: large;
+  border-color: transparent;
+  outline: none;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
-.searchboxbutton {
-  font-weight: bolder;
-  font-size: large;
-  width: 100%;
+.searchButton:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.searchButton:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.searchButton:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.dropDownul {
+  text-decoration: none;
+  padding: 5px;
+}
+.dropDownli {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.dropDowna {
+  text-decoration: none;
+  color: black;
+}
+.dropDowna:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.searchSelect {
+  background-color: transparent;
+  border: none;
+  margin-top: 3px;
+  font-size: 21px;
+  font-weight: 600;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: verdana, "Font Awesome 5 Free";
+}
+.searchSelect:active {
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.searchSelect:hover:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.searchSelect:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+.searchOption {
+  font-size: 12px !important;
+  font-weight: 900;
+  text-align: center;
+  font-family: Font awesome\5 Free;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+option::-ms-expand {
+  display: none;
 }

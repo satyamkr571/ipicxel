@@ -1,11 +1,12 @@
 .footer {
   position: relative;
-
   padding: 0px;
   height: auto;
   width: 100%;
   background-image: url("./image/bgimg6.jpg");
   background-size: cover;
+  display: flex;
+  flex: auto;
 }
 .store {
   background-color: black;
@@ -18,7 +19,6 @@
   text-decoration: none;
   list-style-type: none;
   padding: 5px;
-  margin-left: 20px;
 }
 .li_linkclass {
   color: white;
@@ -35,7 +35,7 @@
 
 .social_contact {
   position: relative;
-  padding-left: 25px;
+  padding-left: 5px;
   color: white;
   font-size: larger;
   font-weight: bolder;

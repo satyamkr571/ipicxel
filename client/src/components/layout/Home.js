@@ -6,8 +6,6 @@ export default function Home() {
   return (
     <div>
       <LandingPage />
-      <ImagePage />
-      <ImageLandingPage />
     </div>
   );
 }
