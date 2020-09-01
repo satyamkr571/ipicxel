@@ -43,7 +43,7 @@ export default function Footer() {
               You can also reach us @
               <div className="row">
                 <button type="button" className="btn btn-fb socialbtn">
-                  <i className="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f" aria-hidden="true"></i>
                 </button>
 
                 <button type="button" className="btn btn-tw socialbtn">
@@ -82,10 +82,10 @@ export default function Footer() {
                 className="mapstyle"
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=Sri%20Ram%20Summit&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
+                frameBorder="0"
                 scrolling="no"
-                marginheight="0"
-                marginwidth="0"
+                marginHeight="0"
+                marginWidth="0"
               ></iframe>
             </Card>
             <p>
